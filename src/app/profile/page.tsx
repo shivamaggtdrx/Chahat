@@ -4,6 +4,7 @@ import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
 import { Award, Bell, ChevronRight, ClipboardCheck, Edit3, GraduationCap, IdCard, ShieldCheck, User, QrCode } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Profile() {
   return (
@@ -22,8 +23,8 @@ export default function Profile() {
           className="flex flex-col items-center text-center mt-2"
         >
           {/* Avatar */}
-          <div className="w-28 h-28 rounded-full border-[6px] border-white dark:border-slate-800 shadow-sm overflow-hidden mb-4">
-            <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
+          <div className="w-28 h-28 rounded-full border-[6px] border-white dark:border-slate-800 shadow-sm overflow-hidden mb-4 relative">
+            <Image src="/profile.png" alt="Profile" fill className="object-cover" />
           </div>
           
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">Chahat Taneja</h2>

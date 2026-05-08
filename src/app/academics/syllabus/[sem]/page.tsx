@@ -2,11 +2,18 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { Book, CheckCircle2, ChevronRight, FileText, GraduationCap } from "lucide-react";
+import { FileText, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Mock database mapping semester to its subjects
-const semesterSubjects: Record<number, any[]> = {
+interface Subject {
+  code: string;
+  name: string;
+  credits: number;
+  type: string;
+}
+
+const semesterSubjects: Record<number, Subject[]> = {
   1: [
     { code: "DS101", name: "Design Fundamentals", credits: 4, type: "Core" },
     { code: "DS102", name: "History of Art & Design", credits: 4, type: "Core" },

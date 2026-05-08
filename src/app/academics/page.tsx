@@ -2,7 +2,7 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { BookOpen, Calendar, ChevronRight, ClipboardList, Clock, GraduationCap, TrendingUp, UserCheck } from "lucide-react";
+import { BookOpen, Calendar, ChevronRight, ClipboardList, GraduationCap, TrendingUp, UserCheck } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 

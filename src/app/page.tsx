@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const onboardingSteps = [
   {
@@ -106,10 +107,11 @@ export default function Onboarding() {
             className="flex flex-col items-center w-full"
           >
             <div className="w-full max-w-[300px] aspect-square rounded-[40px] mb-8 overflow-hidden shadow-2xl relative">
-              <img 
+              <Image 
                 src={onboardingSteps[currentStep].image} 
                 alt={onboardingSteps[currentStep].title} 
-                className="w-full h-full object-cover" 
+                fill
+                className="object-cover" 
               />
             </div>
 

@@ -55,7 +55,7 @@ export default function TimetableScreen() {
           transition={{ duration: 0.3 }}
           className="space-y-4 relative before:absolute before:inset-y-0 before:left-[19px] before:w-0.5 before:bg-slate-200 dark:before:bg-slate-800"
         >
-          {(timetableData as any)[activeDay]?.map((session: any, idx: number) => (
+          {(timetableData as Record<string, { time: string; subject: string; type: string; room: string; faculty: string; color: string; lightBg: string }[]>)[activeDay]?.map((session, idx) => (
             <div key={idx} className="relative pl-12">
               {/* Timeline Dot */}
               <div className={cn(

@@ -2,7 +2,7 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { AlertCircle, Calendar as CalendarIcon, CheckCircle2, ChevronRight, XCircle } from "lucide-react";
+import { AlertCircle, Calendar as CalendarIcon, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const attendanceData = [

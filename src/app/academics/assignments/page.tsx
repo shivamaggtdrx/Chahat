@@ -2,7 +2,7 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, CheckCircle2, ChevronRight, Clock, FileText, UploadCloud, Loader2, Star, Download, FileCheck } from "lucide-react";
+import { Calendar, CheckCircle2, Clock, FileText, UploadCloud, Loader2, Star, Download, FileCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -31,7 +31,7 @@ export default function AssignmentsScreen() {
   const [uploadingId, setUploadingId] = useState<number | null>(null);
   const [successId, setSuccessId] = useState<number | null>(null);
 
-  const handleUpload = (task: any) => {
+  const handleUpload = (task: { id: number; subject: string; title: string; due: string; priority: string; status: string }) => {
     setUploadingId(task.id);
     
     // Simulate upload process

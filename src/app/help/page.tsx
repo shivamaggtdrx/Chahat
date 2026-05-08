@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Camera, Search, Send, ShieldAlert, User, BriefcaseMedical, PhoneCall, BrainCircuit, MapPin, Tag } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function HelpSupportScreen() {
   const [view, setView] = useState<'main' | 'report'>('main');
@@ -200,7 +201,7 @@ export default function HelpSupportScreen() {
               className="bg-white rounded-[20px] p-3 flex items-center gap-4 shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-slate-100"
             >
               <div className="w-16 h-16 rounded-[14px] bg-[#D4DFD2] shrink-0 overflow-hidden relative border border-slate-100">
-                <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=200&h=200&fit=crop" alt="Airpods" className="w-full h-full object-cover mix-blend-multiply" />
+                <Image src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=200&h=200&fit=crop" alt="Airpods" fill className="object-cover mix-blend-multiply" />
               </div>
               <div className="flex-1">
                 <h4 className="font-bold text-slate-900 text-[13px]">Airpods Pro Case</h4>
@@ -218,7 +219,7 @@ export default function HelpSupportScreen() {
               className="bg-white rounded-[20px] p-3 flex items-center gap-4 shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-slate-100"
             >
               <div className="w-16 h-16 rounded-[14px] bg-slate-100 shrink-0 overflow-hidden relative border border-slate-100">
-                <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&h=200&fit=crop" alt="Hydroflask" className="w-full h-full object-cover" />
+                <Image src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&h=200&fit=crop" alt="Hydroflask" fill className="object-cover" />
               </div>
               <div className="flex-1">
                 <h4 className="font-bold text-slate-900 text-[13px]">Blue Hydroflask</h4>

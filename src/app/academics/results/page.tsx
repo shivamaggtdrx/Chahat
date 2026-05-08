@@ -2,7 +2,7 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { Filter, Type, Palette, Layout, ChevronDown } from "lucide-react";
+import { Filter, Type, Palette, Layout } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 

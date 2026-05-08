@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Clock, MapPin, User, Navigation } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const scheduleData = {
   13: [], // Sun
@@ -26,13 +27,14 @@ export default function ScheduleScreen() {
   const [activeDate, setActiveDate] = useState<number>(15);
   const [activeClassId, setActiveClassId] = useState<number>(4); // Default to first class of Tue
 
-  const sessions = (scheduleData as Record<number, any>)[activeDate] || [];
+  const sessions = (scheduleData as Record<number, { id: number; subject: string; type: string; time: string; room: string; faculty: string; color: string; lightBg: string }[]>)[activeDate] || [];
   const activeSession = sessions.find((s: { id: number }) => s.id === activeClassId) || sessions[0];
 
   useEffect(() => {
     if (sessions.length > 0) {
       setActiveClassId(sessions[0].id);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeDate]);
 
   return (
@@ -70,10 +72,11 @@ export default function ScheduleScreen() {
           animate={{ opacity: 1, y: 0 }}
           className="relative rounded-[24px] overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 h-48 mb-6"
         >
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" 
             alt="Campus Map" 
-            className="w-full h-full object-cover opacity-90 mix-blend-luminosity dark:mix-blend-lighten"
+            fill
+            className="object-cover opacity-90 mix-blend-luminosity dark:mix-blend-lighten"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent flex flex-col justify-end p-4">
             <div className="flex items-center gap-3 text-white">

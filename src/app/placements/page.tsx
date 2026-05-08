@@ -3,7 +3,7 @@
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
 import { ArrowRight, Briefcase, Calendar, ChevronRight, Clock, FileText, GraduationCap, LayoutPanelLeft, MapPin, MousePointerClick, Users } from "lucide-react";
-import { cn } from "@/lib/utils";
+
 
 export default function PlacementsScreen() {
   return (
@@ -24,14 +24,14 @@ export default function PlacementsScreen() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-50 rounded-full mb-4 border border-indigo-100/50">
               <div className="w-1.5 h-1.5 rounded-full bg-[#312E81]" />
-              <span className="text-[10px] font-bold text-[#312E81] tracking-wider uppercase">Active Season '26</span>
+              <span className="text-[10px] font-bold text-[#312E81] tracking-wider uppercase">Active Season &apos;26</span>
             </div>
 
             <h1 className="text-[28px] font-black text-slate-900 leading-tight mb-2 tracking-tight">
               Accelerate Your<br />Career
             </h1>
             <p className="text-[13px] text-slate-500 font-medium leading-relaxed mb-6 pr-4">
-              Top tier design studios and agencies are actively hiring. Ensure your portfolio is updated to catch recruiters' eyes.
+              Top tier design studios and agencies are actively hiring. Ensure your portfolio is updated to catch recruiters&apos; eyes.
             </p>
 
             <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-6 px-6 pb-2">

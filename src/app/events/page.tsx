@@ -2,7 +2,7 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, MapPin, Clock, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function CalendarScreen() {
@@ -85,7 +85,7 @@ export default function CalendarScreen() {
               <span className="text-xl font-black text-blue-600 dark:text-blue-400 leading-none">15</span>
             </div>
             <div className="flex-1">
-              <h4 className="text-base font-bold text-slate-900 dark:text-white mb-1">Design Fest '26</h4>
+              <h4 className="text-base font-bold text-slate-900 dark:text-white mb-1">Design Fest &apos;26</h4>
               <p className="text-xs text-slate-500 mb-2">Campus-wide design exhibition and competition.</p>
               <div className="flex gap-3 text-[11px] font-medium text-slate-500">
                 <div className="flex items-center gap-1"><Clock size={12} /> 10:00 AM</div>

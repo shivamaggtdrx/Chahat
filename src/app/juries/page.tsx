@@ -3,7 +3,7 @@
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
 import { BookOpen, Calendar, Clock, Download, Map, MapPin, Share2, Users } from "lucide-react";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function JuriesScreen() {
   return (
@@ -126,7 +126,7 @@ export default function JuriesScreen() {
           className="bg-white rounded-[24px] p-5 shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-slate-100 flex flex-col items-center text-center"
         >
           <div className="w-full h-40 rounded-xl bg-slate-100 mb-6 overflow-hidden relative border border-slate-200">
-            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&h=300&fit=crop" alt="Hall Ticket" className="w-full h-full object-cover opacity-80" />
+            <Image src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&h=300&fit=crop" alt="Hall Ticket" fill className="object-cover opacity-80" />
             <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent" />
           </div>
 

@@ -12,11 +12,11 @@ import {
   FileText,
   GraduationCap,
   TrendingUp,
-  AlertTriangle,
   Upload,
   CheckSquare
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 
@@ -96,8 +96,8 @@ export default function Dashboard() {
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Hi, Chahat! 👋</h2>
             <p className="text-slate-500 text-sm">B.Des Graphic Design • Semester 5</p>
           </div>
-          <div className="w-16 h-16 rounded-full border-2 border-primary/20 overflow-hidden shadow-sm shrink-0">
-            <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
+          <div className="w-16 h-16 rounded-full border-2 border-primary/20 overflow-hidden shadow-sm shrink-0 relative">
+            <Image src="/profile.png" alt="Profile" fill className="object-cover" />
           </div>
         </motion.div>
 
@@ -121,7 +121,7 @@ export default function Dashboard() {
               { id: 3, src: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=800", title: "UI/UX Typography Masterclass" },
             ].map((news) => (
               <div key={news.id} className="min-w-[280px] w-[85%] max-w-[320px] h-48 rounded-[24px] overflow-hidden shadow-lg snap-center relative shrink-0 pointer-events-none">
-                <img src={news.src} alt={news.title} className="w-full h-full object-cover" />
+                <Image src={news.src} alt={news.title} fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-5">
                   <span className="text-[10px] font-bold text-white bg-primary/80 px-2 py-0.5 rounded-md w-fit mb-2">LATEST</span>
                   <h3 className="text-white font-bold text-lg leading-tight">{news.title}</h3>

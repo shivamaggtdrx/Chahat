@@ -2,7 +2,7 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { Bell, Calendar, Megaphone, FileText, CheckCircle2 } from "lucide-react";
+import { Calendar, Megaphone, FileText, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const notifications = [

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Book, Bus, Coffee, MapPin, Mic, Minus, Navigation, Plus, Search, Share2, Building2, Droplets, Clock } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const categories = [
   { id: 'libraries', label: 'Libraries', icon: Book },
@@ -296,11 +297,12 @@ export default function CampusMapScreen() {
               <div className="w-10 h-1.5 bg-slate-200 rounded-full mx-auto mb-5" />
               
               <div className="flex gap-4 mb-5">
-                <div className="w-[84px] h-[84px] rounded-2xl overflow-hidden shadow-sm shrink-0">
-                  <img 
+                <div className="w-[84px] h-[84px] rounded-2xl overflow-hidden shadow-sm shrink-0 relative">
+                  <Image 
                     src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=300&h=300&fit=crop" 
                     alt="Central Library" 
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex-1 pt-0.5">

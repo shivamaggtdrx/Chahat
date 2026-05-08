@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronLeft, CheckCircle2, QrCode } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function DigitalIDScreen() {
@@ -56,8 +57,8 @@ export default function DigitalIDScreen() {
 
         {/* Profile Details */}
         <div className="flex flex-col items-center px-6 relative z-10">
-          <div className="w-28 h-28 rounded-full border-4 border-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] overflow-hidden mb-5">
-            <img src="/profile.png" alt="Profile" className="w-full h-full object-cover" />
+          <div className="w-28 h-28 rounded-full border-4 border-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] overflow-hidden mb-5 relative">
+            <Image src="/profile.png" alt="Profile" fill className="object-cover" />
           </div>
 
           <h2 className="text-xl font-bold text-slate-900 mb-1">Chahat Taneja</h2>

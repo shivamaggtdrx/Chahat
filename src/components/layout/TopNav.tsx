@@ -3,7 +3,7 @@
 import { Bell, Menu, Search, X, ChevronLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
+
 import React from "react";
 import Link from "next/link";
 
