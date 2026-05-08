@@ -10,14 +10,14 @@ import Image from "next/image";
 const scheduleData = {
   13: [], // Sun
   14: [ // Mon
-    { id: 1, time: "09:00 AM - 10:30 AM", subject: "Typography Design", type: "Lecture", room: "Studio-1", faculty: "Dr. A. Sharma", color: "from-blue-500 to-indigo-500", lightBg: "bg-blue-50 dark:bg-blue-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
-    { id: 2, time: "10:30 AM - 12:00 PM", subject: "Color Theory", type: "Lecture", room: "Studio-2", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
-    { id: 3, time: "01:00 PM - 03:00 PM", subject: "UI/UX Lab", type: "Lab", room: "Mac Lab-3", faculty: "Dr. S. Gupta", color: "from-purple-500 to-purple-700", lightBg: "bg-purple-50 dark:bg-purple-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
+    { id: 1, time: "09:00 AM - 10:30 AM", subject: "Symbol Design & Iconography", type: "Lecture", room: "Studio-1", faculty: "Dr. A. Sharma", color: "from-blue-500 to-indigo-500", lightBg: "bg-blue-50 dark:bg-blue-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
+    { id: 2, time: "10:30 AM - 12:00 PM", subject: "Design Management – I", type: "Lecture", room: "Studio-2", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
+    { id: 3, time: "01:00 PM - 03:00 PM", subject: "Photography Lab", type: "Lab", room: "Mac Lab-3", faculty: "Dr. S. Gupta", color: "from-purple-500 to-purple-700", lightBg: "bg-purple-50 dark:bg-purple-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
   ],
   15: [ // Tue
-    { id: 4, time: "09:00 AM - 10:30 AM", subject: "Brand Identity", type: "Lecture", room: "Studio-3", faculty: "Prof. K. Singh", color: "from-orange-400 to-orange-600", lightBg: "bg-orange-50 dark:bg-orange-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
-    { id: 5, time: "11:00 AM - 01:00 PM", subject: "Color Theory Lab", type: "Lab", room: "Mac Lab-1", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
-    { id: 6, time: "02:00 PM - 03:30 PM", subject: "Typography Exam", type: "Exam", room: "Studio-2", faculty: "Dr. A. Sharma", color: "from-error to-red-600", lightBg: "bg-red-50 dark:bg-red-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
+    { id: 4, time: "09:00 AM - 10:30 AM", subject: "Storytelling Through Photography", type: "Lecture", room: "Studio-3", faculty: "Prof. K. Singh", color: "from-orange-400 to-orange-600", lightBg: "bg-orange-50 dark:bg-orange-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
+    { id: 5, time: "11:00 AM - 01:00 PM", subject: "Film Production Workshop", type: "Lab", room: "Mac Lab-1", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
+    { id: 6, time: "02:00 PM - 03:30 PM", subject: "Personal Imprint & Acting", type: "Jury", room: "Studio-2", faculty: "Dr. A. Sharma", color: "from-error to-red-600", lightBg: "bg-red-50 dark:bg-red-900/20", mapUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" },
   ],
   16: [], // Wed
   17: [], // Thu

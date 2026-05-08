@@ -22,7 +22,7 @@ const posts = [
     author: "Chahat T.",
     avatar: "C",
     time: "5h ago",
-    content: "Anyone has previous year references for Typography? Mid-term jury is approaching and I'm freaking out.",
+    content: "Anyone has previous year references for Symbol Design? Mid-term jury is approaching and I'm freaking out.",
     likes: 12,
     comments: 8,
     tags: ["Academics", "Help"],
@@ -159,9 +159,9 @@ export default function Feedback() {
             className="space-y-4"
           >
             {[
-              { name: "Dr. A. Sharma", subject: "Typography Design", rating: 4.8, reviews: 124 },
-              { name: "Prof. R. Verma", subject: "Color Theory", rating: 4.2, reviews: 89 },
-              { name: "Dr. S. Gupta", subject: "UI/UX Design", rating: 4.5, reviews: 102 },
+              { name: "Dr. A. Sharma", subject: "Symbol Design & Iconography", rating: 4.8, reviews: 124 },
+              { name: "Prof. R. Verma", subject: "Design Management – I", rating: 4.2, reviews: 89 },
+              { name: "Dr. S. Gupta", subject: "Film Production Workshop", rating: 4.5, reviews: 102 },
             ].map((faculty, idx) => (
               <div key={idx} className="glass-card p-4 rounded-3xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
                 <div className="flex items-center gap-4">

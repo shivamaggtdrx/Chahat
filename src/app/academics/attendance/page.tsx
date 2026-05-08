@@ -6,11 +6,12 @@ import { AlertCircle, Calendar as CalendarIcon, CheckCircle2 } from "lucide-reac
 import { cn } from "@/lib/utils";
 
 const attendanceData = [
-  { subject: "Typography Design", code: "DS301", total: 40, attended: 35, percentage: 87.5, status: "safe" },
-  { subject: "Color Theory", code: "DS302", total: 38, attended: 28, percentage: 73.6, status: "warning" },
-  { subject: "UI/UX Design", code: "DS303", total: 42, attended: 39, percentage: 92.8, status: "safe" },
-  { subject: "Brand Identity", code: "DS304", total: 40, attended: 29, percentage: 72.5, status: "danger" },
-  { subject: "Packaging Design", code: "DS305", total: 35, attended: 32, percentage: 91.4, status: "safe" },
+  { subject: "Film Production Workshop", code: "DS501", total: 40, attended: 35, percentage: 87.5, status: "safe" },
+  { subject: "Storytelling Through Photography", code: "DS502", total: 38, attended: 28, percentage: 73.6, status: "warning" },
+  { subject: "Photography", code: "DS503", total: 42, attended: 39, percentage: 92.8, status: "safe" },
+  { subject: "Personal Imprint & Acting", code: "DS504", total: 40, attended: 29, percentage: 72.5, status: "danger" },
+  { subject: "Design Management – I", code: "DS505", total: 35, attended: 32, percentage: 91.4, status: "safe" },
+  { subject: "Symbol Design & Iconography", code: "DS506", total: 36, attended: 33, percentage: 91.6, status: "safe" },
 ];
 
 export default function AttendanceScreen() {
@@ -57,7 +58,7 @@ export default function AttendanceScreen() {
           <AlertCircle size={24} className="shrink-0" />
           <div>
             <h4 className="font-bold text-sm">Attendance Shortage</h4>
-            <p className="text-xs text-error/80 mt-0.5">You are running short of attendance in Brand Identity. Attend 3 more classes to reach 75%.</p>
+            <p className="text-xs text-error/80 mt-0.5">You are running short of attendance in Personal Imprint & Acting. Attend 3 more classes to reach 75%.</p>
           </div>
         </motion.div>
 

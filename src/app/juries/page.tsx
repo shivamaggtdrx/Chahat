@@ -52,8 +52,8 @@ export default function JuriesScreen() {
                 </span>
               </div>
 
-              <h2 className="text-[19px] font-black text-slate-900 leading-tight mb-1">Typography Design</h2>
-              <p className="text-xs text-slate-500 font-medium mb-5">DS301 • Midterm Jury</p>
+              <h2 className="text-[19px] font-black text-slate-900 leading-tight mb-1">Symbol Design & Iconography</h2>
+              <p className="text-xs text-slate-500 font-medium mb-5">DS506 • Midterm Jury</p>
 
               <div className="grid grid-cols-2 gap-2 mb-5">
                 <div className="bg-slate-50 rounded-[14px] p-3 border border-slate-100/50">
@@ -94,8 +94,8 @@ export default function JuriesScreen() {
               </div>
             </div>
 
-            <h2 className="text-[17px] font-black text-slate-900 leading-tight mb-1">Color Theory</h2>
-            <p className="text-xs text-slate-500 font-medium mb-4">DS302 • Midterm Jury</p>
+            <h2 className="text-[17px] font-black text-slate-900 leading-tight mb-1">Film Production Workshop</h2>
+            <p className="text-xs text-slate-500 font-medium mb-4">DS501 • Midterm Jury</p>
 
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center gap-2">
@@ -186,22 +186,22 @@ export default function JuriesScreen() {
           <div className="space-y-4">
             <div className="flex justify-between items-center">
               <div>
-                <p className="font-bold text-slate-800 text-xs">Visual Design</p>
-                <p className="text-[10px] text-slate-500 font-medium">DS204</p>
+                <p className="font-bold text-slate-800 text-xs">Basic Graphic Design</p>
+                <p className="text-[10px] text-slate-500 font-medium">DS401</p>
               </div>
               <span className="font-black text-[#4F46E5] text-sm">A</span>
             </div>
             <div className="flex justify-between items-center">
               <div>
-                <p className="font-bold text-slate-800 text-xs">Interaction Design</p>
-                <p className="text-[10px] text-slate-500 font-medium">DS205</p>
+                <p className="font-bold text-slate-800 text-xs">Media Appreciation</p>
+                <p className="text-[10px] text-slate-500 font-medium">DS402</p>
               </div>
               <span className="font-black text-[#4F46E5] text-sm">A-</span>
             </div>
             <div className="flex justify-between items-center">
               <div>
-                <p className="font-bold text-slate-800 text-xs">Design Thinking</p>
-                <p className="text-[10px] text-slate-500 font-medium">DS206</p>
+                <p className="font-bold text-slate-800 text-xs">Articulating Design & Critique</p>
+                <p className="text-[10px] text-slate-500 font-medium">DS403</p>
               </div>
               <span className="font-black text-slate-700 text-sm">B+</span>
             </div>

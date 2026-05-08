@@ -9,12 +9,12 @@ import { cn } from "@/lib/utils";
 const semesters = [
   { sem: 1, subjects: 6, credits: 24, status: "completed", color: "from-emerald-500 to-teal-500" },
   { sem: 2, subjects: 6, credits: 24, status: "completed", color: "from-emerald-500 to-teal-500" },
-  { sem: 3, subjects: 5, credits: 22, status: "completed", color: "from-emerald-500 to-teal-500" },
-  { sem: 4, subjects: 5, credits: 22, status: "completed", color: "from-emerald-500 to-teal-500" },
-  { sem: 5, subjects: 4, credits: 20, status: "current", color: "from-primary to-indigo-500" },
-  { sem: 6, subjects: 4, credits: 20, status: "upcoming", color: "from-slate-400 to-slate-500 dark:from-slate-600 dark:to-slate-700" },
-  { sem: 7, subjects: 3, credits: 18, status: "upcoming", color: "from-slate-400 to-slate-500 dark:from-slate-600 dark:to-slate-700" },
-  { sem: 8, subjects: 2, credits: 16, status: "upcoming", color: "from-slate-400 to-slate-500 dark:from-slate-600 dark:to-slate-700" },
+  { sem: 3, subjects: 6, credits: 22, status: "completed", color: "from-emerald-500 to-teal-500" },
+  { sem: 4, subjects: 6, credits: 26, status: "completed", color: "from-emerald-500 to-teal-500" },
+  { sem: 5, subjects: 6, credits: 26, status: "current", color: "from-primary to-indigo-500" },
+  { sem: 6, subjects: 6, credits: 27, status: "upcoming", color: "from-slate-400 to-slate-500 dark:from-slate-600 dark:to-slate-700" },
+  { sem: 7, subjects: 4, credits: 20, status: "upcoming", color: "from-slate-400 to-slate-500 dark:from-slate-600 dark:to-slate-700" },
+  { sem: 8, subjects: 1, credits: 16, status: "upcoming", color: "from-slate-400 to-slate-500 dark:from-slate-600 dark:to-slate-700" },
 ];
 
 export default function SyllabusScreen() {

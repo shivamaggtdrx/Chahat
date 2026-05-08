@@ -2,17 +2,17 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { Filter, Type, Palette, Layout } from "lucide-react";
+import { Filter, Camera, Clapperboard, Layout } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const subjects = [
   { 
     id: 1, 
-    name: "Typography Design", 
-    code: "DS301", 
+    name: "Film Production Workshop", 
+    code: "DS501", 
     prof: "Prof. Sharma",
-    icon: Type,
+    icon: Clapperboard,
     color: "#2563EB", // Blue
     total: 26,
     maxTotal: 30,
@@ -24,10 +24,10 @@ const subjects = [
   },
   { 
     id: 2, 
-    name: "Color Theory", 
-    code: "DS302", 
+    name: "Storytelling Through Photography", 
+    code: "DS502", 
     prof: "Prof. Gupta",
-    icon: Palette,
+    icon: Camera,
     color: "#9A4B13", // Brown
     total: 22,
     maxTotal: 30,
@@ -39,8 +39,8 @@ const subjects = [
   },
   { 
     id: 3, 
-    name: "UI/UX Design", 
-    code: "DS303", 
+    name: "Design Management – I", 
+    code: "DS505", 
     prof: "Prof. Reddy",
     icon: Layout,
     color: "#4F46E5", // Indigo
@@ -57,8 +57,8 @@ const subjects = [
 const previousSubjects = [
   { 
     id: 11, 
-    name: "Design Fundamentals", 
-    code: "DS101", 
+    name: "Basic Graphic Design", 
+    code: "DS401", 
     prof: "Prof. Anan",
     icon: Layout,
     color: "#2563EB",
@@ -72,10 +72,10 @@ const previousSubjects = [
   },
   { 
     id: 12, 
-    name: "History of Art", 
-    code: "DS102", 
+    name: "Media Appreciation", 
+    code: "DS402", 
     prof: "Prof. Mehra",
-    icon: Palette,
+    icon: Camera,
     color: "#9A4B13",
     total: 25,
     maxTotal: 30,

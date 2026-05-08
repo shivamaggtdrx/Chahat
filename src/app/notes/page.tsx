@@ -10,22 +10,22 @@ import { cn } from "@/lib/utils";
 const INITIAL_NOTES = [
   {
     id: 1,
-    title: "Color Theory Research",
-    content: "Remember to look up Bauhaus color usage. Need to prepare moodboard for the midterm jury. Focus on primary colors and abstract geometric shapes.",
+    title: "Symbol Design Research",
+    content: "Remember to prepare reference material for Symbol Design jury. Need to prepare moodboard for the midterm jury. Focus on iconographic systems and cultural symbolism.",
     date: "12 Oct",
     color: "bg-orange-100/80 text-orange-800 border-orange-200",
   },
   {
     id: 2,
-    title: "Typography Concepts",
-    content: "1. Kerning is crucial\n2. Pair sans-serif headers (Inter) with serif body text (Merriweather)\n3. Avoid using more than 2-3 weights.",
+    title: "Photography Notes",
+    content: "1. Golden hour lighting is crucial\n2. Rule of thirds for composition\n3. Use manual focus for portraits. Study chiaroscuro technique.",
     date: "14 Oct",
     color: "bg-indigo-100/80 text-indigo-800 border-indigo-200",
   },
   {
     id: 3,
     title: "Weekend To-Do",
-    content: "- Finish digital ID prototype\n- Clean up Figma files\n- Review peer feedback on UI/UX assignment",
+    content: "- Finish film storyboard for workshop\n- Organize photography portfolio\n- Review peer feedback on Design Management assignment",
     date: "15 Oct",
     color: "bg-emerald-100/80 text-emerald-800 border-emerald-200",
   },

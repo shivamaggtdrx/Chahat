@@ -9,19 +9,19 @@ import { useState } from "react";
 const tabs = ["Pending", "Submitted", "Graded"];
 
 const initialPending = [
-  { id: 1, subject: "Typography Design", title: "Font Face Creation Project", due: "Tomorrow, 11:59 PM", priority: "high", status: "pending" },
-  { id: 2, subject: "Color Theory", title: "Brand Identity Case Study", due: "Oct 12, 10:00 AM", priority: "medium", status: "pending" },
-  { id: 3, subject: "UI/UX Design", title: "Wireframing the App", due: "Oct 15, 11:59 PM", priority: "low", status: "pending" },
+  { id: 1, subject: "Symbol Design & Iconography", title: "Icon System Creation Project", due: "Tomorrow, 11:59 PM", priority: "high", status: "pending" },
+  { id: 2, subject: "Design Management – I", title: "Brand Strategy Case Study", due: "Oct 12, 10:00 AM", priority: "medium", status: "pending" },
+  { id: 3, subject: "Storytelling Through Photography", title: "Photo Essay Submission", due: "Oct 15, 11:59 PM", priority: "low", status: "pending" },
 ];
 
 const initialSubmitted = [
-  { id: 10, subject: "History of Art", title: "Renaissance Analysis", submittedOn: "Oct 10, 04:30 PM", file: "renaissance_analysis.pdf" },
-  { id: 11, subject: "Typography Design", title: "Serif vs Sans Serif Essay", submittedOn: "Oct 08, 11:15 AM", file: "serif_essay.docx" },
+  { id: 10, subject: "Film Production Workshop", title: "Short Film Storyboard", submittedOn: "Oct 10, 04:30 PM", file: "storyboard_final.pdf" },
+  { id: 11, subject: "Symbol Design & Iconography", title: "Symbol System Research", submittedOn: "Oct 08, 11:15 AM", file: "symbol_research.docx" },
 ];
 
 const initialGraded = [
-  { id: 20, subject: "Color Theory", title: "Color Wheel Project", gradedOn: "Sep 28", score: "95/100", feedback: "Excellent use of complementary colors.", file: "color_wheel_final.pdf" },
-  { id: 21, subject: "UI/UX Design", title: "User Persona Research", gradedOn: "Sep 20", score: "88/100", feedback: "Good insights, but missing demographic data.", file: "personas.pdf" },
+  { id: 20, subject: "Photography", title: "Light & Shadow Portfolio", gradedOn: "Sep 28", score: "95/100", feedback: "Excellent composition and creative use of natural lighting.", file: "light_shadow_portfolio.pdf" },
+  { id: 21, subject: "Personal Imprint & Acting", title: "Self-Portrait Presentation", gradedOn: "Sep 20", score: "88/100", feedback: "Good expressive range, but need more depth in concept.", file: "self_portrait.pdf" },
 ];
 
 export default function AssignmentsScreen() {

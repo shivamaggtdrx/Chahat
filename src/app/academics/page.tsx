@@ -7,10 +7,12 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const subjects = [
-  { name: "Typography Design", code: "DS301", attendance: 88, color: "from-blue-500 to-indigo-500" },
-  { name: "Color Theory", code: "DS302", attendance: 75, color: "from-emerald-400 to-emerald-600", warning: true },
-  { name: "UI/UX Design", code: "DS303", attendance: 92, color: "from-purple-500 to-purple-700" },
-  { name: "Brand Identity", code: "DS304", attendance: 85, color: "from-orange-400 to-orange-600" },
+  { name: "Film Production Workshop", code: "DS501", attendance: 88, color: "from-blue-500 to-indigo-500" },
+  { name: "Storytelling Through Photography", code: "DS502", attendance: 75, color: "from-emerald-400 to-emerald-600", warning: true },
+  { name: "Photography", code: "DS503", attendance: 92, color: "from-purple-500 to-purple-700" },
+  { name: "Personal Imprint & Acting", code: "DS504", attendance: 85, color: "from-orange-400 to-orange-600" },
+  { name: "Design Management – I", code: "DS505", attendance: 90, color: "from-rose-500 to-pink-600" },
+  { name: "Symbol Design & Iconography", code: "DS506", attendance: 82, color: "from-cyan-500 to-teal-600" },
 ];
 
 export default function Academics() {

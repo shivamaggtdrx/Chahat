@@ -10,13 +10,13 @@ const days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 
 const timetableData = {
   Mon: [
-    { time: "09:00 AM - 10:30 AM", subject: "Typography Design", type: "Lecture", room: "Studio-1", faculty: "Dr. A. Sharma", color: "from-blue-500 to-indigo-500", lightBg: "bg-blue-50 dark:bg-blue-900/20" },
-    { time: "10:30 AM - 12:00 PM", subject: "Color Theory", type: "Lecture", room: "Studio-2", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20" },
-    { time: "01:00 PM - 03:00 PM", subject: "UI/UX Lab", type: "Lab", room: "Mac Lab-3", faculty: "Dr. S. Gupta", color: "from-purple-500 to-purple-700", lightBg: "bg-purple-50 dark:bg-purple-900/20" },
+    { time: "09:00 AM - 10:30 AM", subject: "Symbol Design & Iconography", type: "Lecture", room: "Studio-1", faculty: "Dr. A. Sharma", color: "from-blue-500 to-indigo-500", lightBg: "bg-blue-50 dark:bg-blue-900/20" },
+    { time: "10:30 AM - 12:00 PM", subject: "Design Management – I", type: "Lecture", room: "Studio-2", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20" },
+    { time: "01:00 PM - 03:00 PM", subject: "Photography Lab", type: "Lab", room: "Mac Lab-3", faculty: "Dr. S. Gupta", color: "from-purple-500 to-purple-700", lightBg: "bg-purple-50 dark:bg-purple-900/20" },
   ],
   Tue: [
-    { time: "09:00 AM - 10:30 AM", subject: "Brand Identity", type: "Lecture", room: "Studio-3", faculty: "Prof. K. Singh", color: "from-orange-400 to-orange-600", lightBg: "bg-orange-50 dark:bg-orange-900/20" },
-    { time: "11:00 AM - 01:00 PM", subject: "Color Theory Lab", type: "Lab", room: "Mac Lab-1", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20" },
+    { time: "09:00 AM - 10:30 AM", subject: "Storytelling Through Photography", type: "Lecture", room: "Studio-3", faculty: "Prof. K. Singh", color: "from-orange-400 to-orange-600", lightBg: "bg-orange-50 dark:bg-orange-900/20" },
+    { time: "11:00 AM - 01:00 PM", subject: "Film Production Workshop", type: "Lab", room: "Mac Lab-1", faculty: "Prof. R. Verma", color: "from-emerald-400 to-emerald-600", lightBg: "bg-emerald-50 dark:bg-emerald-900/20" },
   ],
   // ...other days would be similar
 };

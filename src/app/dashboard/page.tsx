@@ -155,10 +155,10 @@ export default function Dashboard() {
           <div className="relative z-10 p-6 flex flex-col justify-between h-full text-white">
             <div className="flex items-center gap-2 bg-white/20 w-fit px-3 py-1 rounded-full backdrop-blur-md">
               <Bell size={14} className="animate-pulse" />
-              <span className="text-xs font-semibold uppercase tracking-wider">Exam Alert</span>
+              <span className="text-xs font-semibold uppercase tracking-wider">Jury Alert</span>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-1">Mid-Term Exams</h3>
+              <h3 className="text-xl font-bold mb-1">Mid-Term Juries</h3>
               <p className="text-white/80 text-sm">Starting from Oct 15th. Download schedule now.</p>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function Dashboard() {
             <div>
               <p className="text-[15px] font-medium text-slate-600 dark:text-slate-400 mb-1">Juries</p>
               <p className="text-[28px] font-bold text-slate-900 dark:text-white leading-none mb-2 tracking-tight">In 2 Days</p>
-              <p className="text-xs font-medium text-slate-500">Typography Design</p>
+              <p className="text-xs font-medium text-slate-500">Symbol Design & Iconography</p>
             </div>
           </div>
 
@@ -256,8 +256,8 @@ export default function Dashboard() {
           </div>
           <div className="space-y-3">
             {[
-              { subject: "Typography Design", title: "Font Face Creation Project", due: "Tomorrow, 11:59 PM", priority: "high" },
-              { subject: "Color Theory", title: "Brand Identity Case Study", due: "Oct 12", priority: "medium" },
+              { subject: "Symbol Design & Iconography", title: "Icon System Creation Project", due: "Tomorrow, 11:59 PM", priority: "high" },
+              { subject: "Design Management – I", title: "Brand Strategy Case Study", due: "Oct 12", priority: "medium" },
             ].map((task, idx) => (
               <div key={idx} className="glass-card p-4 rounded-2xl flex items-center justify-between border border-slate-100 dark:border-slate-800">
                 <div className="flex items-start gap-4">
@@ -340,7 +340,7 @@ export default function Dashboard() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-error" />
-                  <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">Mid-Term Exams Begin</span>
+                  <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">Mid-Term Juries Begin</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-blue-500" />

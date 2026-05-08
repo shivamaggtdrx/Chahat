@@ -7,7 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 const recentSearches = [
-  "Typography Design Syllabus",
+  "Symbol Design & Iconography Syllabus",
   "Design Fest '26 Registration",
   "Prof. A. Sharma Office Hours",
 ];
