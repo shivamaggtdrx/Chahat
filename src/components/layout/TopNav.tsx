@@ -23,6 +23,7 @@ export function TopNav({ title = "Life OS", showBack = false }: TopNavProps) {
     { label: "Notes", href: "/notes" },
     { label: "Attendance", href: "/academics/attendance" },
     { label: "Results", href: "/academics/results" },
+    { label: "Previous Work", href: "/previous-work" },
     { label: "Placement Cell", href: "/placements" },
     { label: "Campus Map", href: "/map" },
     { label: "Schedule", href: "/schedule" },
@@ -73,62 +74,66 @@ export function TopNav({ title = "Life OS", showBack = false }: TopNavProps) {
       <AnimatePresence>
         {menuOpen && (
           <>
+            {/* Full-screen backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setMenuOpen(false)}
-              className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm max-w-md mx-auto"
+              className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
             />
-            <motion.div
-              initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 left-0 bottom-0 z-50 w-[80%] max-w-[320px] bg-white dark:bg-slate-900 shadow-2xl flex flex-col"
-            >
-              <div className="p-6 pb-5 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
-                <div className="flex items-center gap-3.5">
-                  <div className="w-[44px] h-[44px] rounded-[14px] bg-gradient-to-br from-[#38BDF8] to-[#3B82F6] flex flex-col items-start justify-center text-white font-black text-[16px] leading-[1.1] pl-2 shadow-sm">
-                    <span>L-</span>
-                    <span>OS</span>
+            {/* Drawer container — centered like the app */}
+            <div className="fixed inset-0 z-50 max-w-md mx-auto pointer-events-none">
+              <motion.div
+                initial={{ x: "-100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "-100%" }}
+                transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                className="absolute top-0 left-0 bottom-0 w-[80%] max-w-[320px] bg-white dark:bg-slate-900 shadow-2xl flex flex-col pointer-events-auto"
+              >
+                <div className="p-6 pb-5 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+                  <div className="flex items-center gap-3.5">
+                    <div className="w-[44px] h-[44px] rounded-[14px] bg-gradient-to-br from-[#38BDF8] to-[#3B82F6] flex flex-col items-start justify-center text-white font-black text-[16px] leading-[1.1] pl-2 shadow-sm">
+                      <span>L-</span>
+                      <span>OS</span>
+                    </div>
+                    <div className="pt-1">
+                      <h2 className="font-bold text-[20px] text-[#0F172A] dark:text-white leading-none mb-1.5 tracking-tight">Life OS</h2>
+                      <p className="text-[13px] text-[#64748B] font-medium leading-none">Your Campus Companion</p>
+                    </div>
                   </div>
-                  <div className="pt-1">
-                    <h2 className="font-bold text-[20px] text-[#0F172A] dark:text-white leading-none mb-1.5 tracking-tight">Life OS</h2>
-                    <p className="text-[13px] text-[#64748B] font-medium leading-none">Your Campus Companion</p>
-                  </div>
+                  <button
+                    onClick={() => setMenuOpen(false)}
+                    className="p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                  >
+                    <X size={22} className="text-[#64748B]" />
+                  </button>
                 </div>
-                <button
-                  onClick={() => setMenuOpen(false)}
-                  className="p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <X size={22} className="text-[#64748B]" />
-                </button>
-              </div>
-              <div className="flex-1 overflow-y-auto py-4 px-4 custom-scrollbar">
-                <div className="flex flex-col gap-1">
-                  {menuItems.map((item, index) => (
-                    <motion.div
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.05 }}
-                      key={item.label}
-                    >
-                      <Link
-                        href={item.href}
-                        onClick={() => setMenuOpen(false)}
-                        className="flex items-center gap-4 px-4 py-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-300 font-medium"
+                <div className="flex-1 overflow-y-auto py-4 px-4 custom-scrollbar">
+                  <div className="flex flex-col gap-1">
+                    {menuItems.map((item, index) => (
+                      <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.05 }}
+                        key={item.label}
                       >
-                        {item.label}
-                      </Link>
-                    </motion.div>
-                  ))}
+                        <Link
+                          href={item.href}
+                          onClick={() => setMenuOpen(false)}
+                          className="flex items-center gap-4 px-4 py-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-300 font-medium"
+                        >
+                          {item.label}
+                        </Link>
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="p-6 border-t border-slate-100 dark:border-slate-800">
-                <p className="text-xs text-center text-slate-400">Life OS v1.0.0</p>
-              </div>
-            </motion.div>
+                <div className="p-6 border-t border-slate-100 dark:border-slate-800">
+                  <p className="text-xs text-center text-slate-400">Life OS v1.0.0</p>
+                </div>
+              </motion.div>
+            </div>
           </>
         )}
       </AnimatePresence>

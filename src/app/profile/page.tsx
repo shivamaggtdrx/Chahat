@@ -2,11 +2,18 @@
 
 import { TopNav } from "@/components/layout/TopNav";
 import { motion } from "framer-motion";
-import { Award, Bell, ChevronRight, ClipboardCheck, Edit3, GraduationCap, IdCard, ShieldCheck, User, QrCode } from "lucide-react";
+import { Award, Bell, ChevronRight, ClipboardCheck, Edit3, GraduationCap, IdCard, LogOut, ShieldCheck, User, QrCode } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Profile() {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    router.push("/login");
+  };
+
   return (
     <div className="min-h-screen pb-28 bg-slate-50 dark:bg-slate-900 relative">
       {/* Background Gradient */}
@@ -130,6 +137,22 @@ export default function Profile() {
               <ChevronRight size={18} className="text-slate-400" />
             </Link>
           </div>
+        </motion.div>
+
+        {/* Logout Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="pt-2 pb-4"
+        >
+          <button
+            onClick={handleLogout}
+            className="w-full flex items-center justify-center gap-3 p-4 rounded-2xl bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800/30 text-red-600 dark:text-red-400 font-bold text-sm hover:bg-red-100 dark:hover:bg-red-900/20 active:scale-[0.98] transition-all"
+          >
+            <LogOut size={20} />
+            Log Out
+          </button>
         </motion.div>
 
       </main>
