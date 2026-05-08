@@ -22,7 +22,7 @@ export function BottomNav() {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 px-4 pb-4 max-w-md mx-auto">
+    <div className="fixed bottom-0 left-0 right-0 z-50 px-4 pb-4">
       <div className="glass-card rounded-3xl flex items-center justify-between px-6 py-4">
         {navItems.map((item) => {
           const isActive = pathname.startsWith(item.href);

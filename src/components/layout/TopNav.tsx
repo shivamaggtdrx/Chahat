@@ -83,7 +83,7 @@ export function TopNav({ title = "Life OS", showBack = false }: TopNavProps) {
               className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
             />
             {/* Drawer container — centered like the app */}
-            <div className="fixed inset-0 z-50 max-w-md mx-auto pointer-events-none">
+            <div className="fixed inset-0 z-50 pointer-events-none">
               <motion.div
                 initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
