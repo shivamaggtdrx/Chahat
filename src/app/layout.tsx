@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased bg-slate-900 flex justify-center min-h-screen`}>
-        <div className="w-full max-w-md bg-brand-light min-h-screen shadow-2xl relative overflow-x-hidden">
+        <div className="w-full max-w-md bg-brand-light min-h-screen shadow-2xl relative overflow-hidden mx-auto">
           {children}
           <BottomNav />
         </div>
