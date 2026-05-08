@@ -36,9 +36,9 @@ export default function Profile() {
           </div>
 
           <div className="flex gap-3">
-            <button className="bg-[#312E81] dark:bg-blue-600 text-white flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-transform flex-1">
+            <Link href="/profile/edit" className="bg-[#312E81] dark:bg-blue-600 text-white flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-transform flex-1">
               <Edit3 size={16} /> Edit Profile
-            </button>
+            </Link>
             <Link href="/profile/digital-id" className="bg-white text-[#312E81] border border-[#312E81]/20 dark:bg-slate-800 dark:text-blue-400 dark:border-blue-400/20 flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm shadow-sm active:scale-95 transition-transform flex-1">
               <QrCode size={16} /> Digital ID
             </Link>
